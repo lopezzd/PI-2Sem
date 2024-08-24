@@ -1,3 +1,12 @@
+html::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -11,3 +20,12 @@ section{
   background-size: cover;
   background-attachment: fixed;
 }
+
+.cabecalho{
+  opacity: 0.1;
+  width: 100%;
+  flex-flow: row nowrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
