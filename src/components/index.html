@@ -6,30 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/input.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
   <header>
     <nav>
       <ul class="cabecalho">
-        <li><a href="#footer">Home</a></li>
-        <li><a href="#footer">Sobre Nós</a></li>
-        <li><a href="#footer">Area logada</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#login">Area logada</a></li>
         <li><a href="#footer">Contato</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section style="background-image: url(../assets/Background-2.jpg);"></section>
-    <section style="min-height:100vh;"></section>
-    <section style="background-image: url(../assets/Background-1.jpg);"></section>
-    <section style="min-height:100vh;"></section>
-    <section style="background-image: url(../assets/Background-3.jpg);"></section>
-    <section style="min-height:100vh;"></section>
-  </main>
-  <footer id="footer">
+    <section class="parallax-1"></section>
+    <section id="home" class="no-parallax"></section>
+    <section class="parallax-2"></section>
+    <section id="about" class="no-parallax"></section>
+    <section class="parallax-3"></section>
+    <section id="login" class="no-parallax">
+      <article class="login-form">
+        <div class="form-side">
+          <h1>Primeira vez? </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus cumque earum sit possimus itaque
+            nihil odit laudantium, officiis ab placeat, dicta reprehenderit expedita distinctio suscipit cum voluptates
+            sequi. Aut!</p>
+          <a href="signup.html">Cadastrar</a>
+        </div>
+        <div class="form-ask">
+          <h2>Aluno</h2>
+          <form action="" method="post">
+            <div class="inputBox">
+              <input type="text" id="email-student" required>
+              <label for="email-student">Email</label>
+            </div>
+            <div class="inputBox">
+              <input type="password" id="password-student" required>
+              <label for="password-student">Senha</label>
+            </div>
+            <button>
+              entrar
+            </button>
+          </form>
+        </div>
+      </article>
 
-  </footer>
+      <article class="login-form">
+        <div class="form-side">
+          <h1>Primeira vez? </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus cumque earum sit possimus itaque
+            nihil odit laudantium, officiis ab placeat, dicta reprehenderit expedita distinctio suscipit cum voluptates
+            sequi. Aut!</p>
+          <a href="signup.html">Cadastrar</a>
+        </div>
+        <div class="form-ask">
+          <h2>Professor</h2>
+          <form action="" method="post">
+            <div class="inputBox">
+              <input type="text" id="email-teacher" required>
+              <label for="email-teacher">Email</label>
+            </div>
+
+            <div class="inputBox">
+              <input type="password" id="password-teacher" required>
+              <label for="password-teacher">Senha</label>
+            </div>
+
+            <button>
+              entrar
+            </button>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer id="footer">
+    <div class="footer-col">
+      <h4>products</h4>
+      <ul>
+        <li>teams</li>
+        <li>advertising</li>
+        <li>talent</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>network</h4>
+      <ul>
+        <li>technology</li>
+        <li>science</li>
+        <li>business</li>
+        <li>professional</li>
+        <li>API</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>company</h4>
+      <ul>
+        <li>about</li>
+        <li>legal</li>
+        <li>contact us</li>
+      </ul>
+    </div>
   <script src="../utils/script.js"></script>
 </body>
 

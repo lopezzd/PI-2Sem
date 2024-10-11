@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <link rel="stylesheet" href="../styles/input.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+        </div>
+        <div class="form">
+            <form action="#" method="post" id="alunoForm">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="inputBox">
+                        <input id="nomeAluno" type="text" name="firstname" required>
+                        <label for="firstname">Primeiro Nome</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input id="sobrenomeAluno" type="text" name="lastname" required>
+                        <label for="lastname">Sobrenome</label>
+                    </div>
+                    <div class="inputBox">
+                        <input id="emailAluno" type="email" name="email" required>
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input id="numeroAluno" type="tel" name="number" required>
+                        <label for="number">Celular</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input id="senhaAluno" type="password" name="password" required>
+                        <label for="password">Senha</label>
+                    </div>
+
+
+                    <div class="inputBox">
+                        <input id="confirmarSenhaAluno" type="password" name="confirmPassword" required>
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <div class="inputBox arrow">
+                        <select class="gender-select" name="genders" id="generoAluno">
+                            <option value="Homem">Homem</option>
+                            <option value="Mulher">Mulher</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <label>Gênero</label>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

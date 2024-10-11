@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html::-webkit-scrollbar{
+:root{
+  --black-color-: #212121;
+  --white-color-: #efefef;
+  --orange-color-: #fd4a2c;
+  --gray-color-: #ccc;
+  --first-linear-: linear-gradient(#ff4844, #fd4a2c);
+  --second-linear-: linear-gradient(#fd4a2c, #ff4844);
+}
+
+html::-webkit-scrollbar {
   display: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: var(--black-color-);
+}
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,43 +30,6 @@ html{
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
-}
-
-section{
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.cabecalho{
-  width: 100%;
-  flex-flow: row nowrap;
-  display: flex;
-  justify-content: space-evenly;
-  position: fixed;
-  text-transform: uppercase;
-  font-weight: bolder;
-  padding: 2rem;
-  backdrop-filter: blur(7px);
-  background-color: #0007;
-  font-size: 1.3rem;
-  
-}
-
-a{
-  padding-inline: 75px;
-  border-right: 1px solid #efefef;
-}
-
-a:hover{
-  color: #fff;
-  filter: blur(.3px);
-}
-
-.cabecalho a:last-child{
-  border:none;
 }

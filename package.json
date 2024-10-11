@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.21.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3"
+  },
+  "name": "pi-2sem",
+  "description": "Projeto Integrador 2° Semestre",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "html",
+    "css",
+    "javascript",
+    "sql"
+  ],
+  "author": "João Henrique Lopes",
+  "license": "ISC"
+}

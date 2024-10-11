@@ -1,0 +1,74 @@
+input, .gender-select {
+    height: 40px;
+    border: 1px solid var(--gray-color-);
+    border-radius: 1px;
+    background: transparent;
+    padding: 0 15px;
+    transition: all .3s ease;
+    color: #212121;
+}
+
+label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--white-color-);
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease;
+}
+
+.inputBox{
+    position: relative;
+
+    & input:focus {
+        border-color: var(--orange-color-);
+        outline: 1px solid var(--orange-color-);
+    }
+
+    & input:focus+label,
+    input:valid+label {
+        font-size: 11px;
+        top: -5px;
+    }
+
+    & input:focus+label {
+        color: var(--orange-color-);
+    }
+}
+
+
+.gender-select {
+    appearance: none; /* Remove a seta padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.gender-select:focus {
+    border-color: var(--orange-color-);
+    outline: 1px solid var(--orange-color-);
+}
+
+.inputBox select:focus + label,
+.inputBox select:valid + label {
+    font-size: 11px;
+    top: -5px;
+}
+
+.inputBox select:focus + label {
+    color: var(--orange-color-);
+}
+
+.arrow::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+}
