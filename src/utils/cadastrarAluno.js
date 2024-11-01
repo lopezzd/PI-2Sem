@@ -29,7 +29,6 @@ alunoForm.addEventListener("submit", (event) => {
     .then(response => response.text())
     .then(data => {
         console.log(data);
-        // Aqui você pode adicionar lógica para mostrar uma mensagem de sucesso ou redirecionar o usuário
     })
     .catch(error => {
         console.error('Error:', error);
