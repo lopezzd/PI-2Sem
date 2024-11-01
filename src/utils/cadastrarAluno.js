@@ -7,7 +7,31 @@ const senhaAluno = document.getElementById("senhaAluno");
 const confirmarSenhaAluno = document.getElementById("confirmarSenhaAluno");
 const generoAluno = document.getElementById("generoAluno");
 
-alunoForm.addEventListener("submit",(event)=>{
+alunoForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    
+
+    const alunoData = {
+        nome: nomeAluno.value,
+        sobrenome: sobrenomeAluno.value,
+        email: emailAluno.value,
+        numero: numeroAluno.value,
+        senha: senhaAluno.value,
+        genero: generoAluno.value
+    };
+
+    fetch('/addAluno', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(alunoData)
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        // Aqui você pode adicionar lógica para mostrar uma mensagem de sucesso ou redirecionar o usuário
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 });
