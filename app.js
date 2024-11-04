@@ -13,12 +13,8 @@ async function run() {
 
     console.log('Conectado ao Oracle Database');
 
-    const sql = `INSERT INTO sua_tabela (coluna1, coluna2) VALUES (:valor1, :valor2)`;
+    const sql = `INSERT INTO teste (nome, email, numero) VALUES ('joao', 'joao@gmail', 19999035345)`;
 
-    const binds = {
-      valor1: 'valor_exemplo1',
-      valor2: 'valor_exemplo2'
-    };
 
     const result = await connection.execute(sql, binds, { autoCommit: true });
 
