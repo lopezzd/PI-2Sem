@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --black-color-: #212121;
+  --white-color-: #efefef;
+  --orange-color-: #fd4a2c;
+  --gray-color-: #ccc;
+  --first-linear-: linear-gradient(#ff4844, #fd4a2c);
+  --second-linear-: linear-gradient(#fd4a2c, #ff4844);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray-color-);
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black-color-);
+}
+
+h1 {
+  color: var(--white-color-);
+  font-size: 2rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: var(--orange-color-);
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+main{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black-color-);
+}
+
+.user-list {
+  width: 70vw;
+  height: 10vh;
+  background-color: #fd4a2c;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.user {
+  background-color: var(--white-color-);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user span {
+  font-size: 1rem;
+  color: var(--gray-color-);
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: var(--gray-color-);
+}
+
+.error {
+  color: var(--orange-color-);
+  font-size: 1.2rem;
+}
+
+.cabecalho {
+  width: 100%;
+  flex-flow: row nowrap;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  position: fixed;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 2rem;
+  backdrop-filter: blur(7px);
+  background-color: #0007;
+  font-size: 1.3rem;
+
+}

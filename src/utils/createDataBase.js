@@ -22,7 +22,7 @@ function createDataBase() {
     try {
       const conexao = await this.getConexao();
       const sql = ` CREATE TABLE ALUNOS (
-                      ID INT AUTO_INCREMENT PRIMARY KEY,
+                      ID_ALUNO INT AUTO_INCREMENT PRIMARY KEY,
                       CPF_ALUNO CPF (11) UNIQUE,
                       NOME_ALUNO VARCHAR(40),
                       EMAIL_ALUNO VARCHAR(60),
